@@ -1,0 +1,30 @@
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  background-color: seashell;
+  width: 80%;
+  padding: 20px 10px 70px 10px;
+  height: 100vw;
+  color: #4c4c4c;
+}
+
+.description {}
+
+.profile h2{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.profile a{
+  display: inline-block;
+  background-color: #f46a60;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px auto;
+  text-decoration: none;
+  color: seashell;
+}

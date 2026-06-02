@@ -15,7 +15,7 @@ import recipeData from './assets/data/recipes.json';
 
 export default function App() {
 
-// ALL RECIPE LIST
+  // ALL RECIPE LIST
   const [currentRecipeList, setCurrentRecipeList] = useState(recipeData);
   const deleteRecipe = (id) => {
     const newList = currentRecipeList.filter((recipe) => {
@@ -38,8 +38,8 @@ export default function App() {
   const updateRecipe = (updatedRecipeObj) => {
     const newUpdatedList = currentRecipeList.map((recipe) => {
       return recipe.id === updatedRecipeObj.id // if the id exist on the database already, change to the edited recipe
-      ? updatedRecipeObj 
-      : recipe
+        ? updatedRecipeObj
+        : recipe
     })
     setCurrentRecipeList(newUpdatedList)
   }
@@ -56,14 +56,14 @@ export default function App() {
             <RecipeList recipesList={currentRecipeList} onDelete={deleteRecipe} />
           } />
           <Route path='/about' element={<AboutPage />} />
-          
+
           {/* CREATE/UPDATE/DETAILS/DELETE ON DASHBOARD  */}
           <Route
             path='/dashboard/:recipeId?' //'..recipeID?' has possiblity both /dashboard and /dashboard/:recipeId
             element={
               <DashboardPage
                 onSubmit={addNewRecipe}
-                onUpdate={updateRecipe} 
+                onUpdate={updateRecipe}
                 recipesList={currentRecipeList} />}
           />
           <Route path='/recipe/:recipeId' element={<RecipeDetailsPage recipesList={currentRecipeList} />} />
