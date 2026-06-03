@@ -1,0 +1,38 @@
+.footer-container {
+  background-color: #f46a60;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  text-justify: end;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-box {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.footer-img-box{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: seashell;
+}
+
+.footer-link {
+  text-underline-offset: 0.25em;
+  color: seashell;
+}
+
+.footer-img {
+  width: auto;
+  height: 50px;
+  margin-right: 30px;
+}

@@ -32,7 +32,7 @@ body {
 }
 
 .side-bar {
-  background-color: #56B7A3;
+  
   position: relative;
   left: 0;
   width: 200px;
@@ -55,6 +55,7 @@ body {
 
 .nav-wrap {
   display: flex;
+  align-items: center;
   gap: 3em;
 }
 
@@ -66,6 +67,20 @@ body {
   color: grey
 }
 
+.new-recipe-btn {
+  border: 1px solid #56B7A3;
+  border-radius: 5px;
+  padding: 2px 6px;
+  color: white;
+  background-color: #56B7A3;
+  text-decoration: none;
+}
+
+.new-recipe-btn:hover {
+  background-color: #F46A60;
+  border: 1px solid #F46A60;
+}
+
 
 
 .logo {
@@ -74,13 +89,7 @@ body {
 }
 
 
-.individual-recipe {
-  display: flex;
-  align-items: center;
-  margin: 0.5em;
-  padding: 1em;
-  gap: 1em;
-}
+
 
 
 

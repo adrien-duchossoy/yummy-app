@@ -1,6 +1,6 @@
 import { NewRecipeForm } from "../components/NewRecipeForm"
 import { useParams } from 'react-router-dom'
-import '../form.css'
+
 
 
 export const DashboardPage = ({ onSubmit, recipesList, onUpdate }) => {

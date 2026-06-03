@@ -1,6 +1,7 @@
 
 import { RecipeCard } from './RecipeCard';
 import { useState } from 'react';
+import '../styles/recipe-list.css'
 
 export const RecipeList = ({ recipesList, onDelete }) => {
 
@@ -10,6 +11,7 @@ export const RecipeList = ({ recipesList, onDelete }) => {
 
                 return (
                     <RecipeCard
+                        className ='recipe-cards-list'
                         onDelete={onDelete}
                         recipe={recipe}
                         key={recipe.id} />
