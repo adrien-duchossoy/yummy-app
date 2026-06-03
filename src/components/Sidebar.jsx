@@ -1,11 +1,10 @@
-
+import { Link } from 'react-router-dom'
 
 export const Sidebar = () => {
     return (
         <div className="side-bar">
             <div>
-                <p>Filter by</p>
-                <p>Filters to be added</p>
+                <Link className="nav-link, new-recipe-btn" to ="/dashboard">Add New Recipe</Link>
             </div>
         </div>
     )

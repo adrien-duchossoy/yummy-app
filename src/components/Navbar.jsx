@@ -9,7 +9,6 @@ export const Navbar = () => {
             <nav className="nav-wrap">
                 <Link className="nav-link" to ="/">Home</Link>
                 <Link className="nav-link" to ="/about">About</Link>
-                <Link className="nav-link, new-recipe-btn" to ="/dashboard">Add New Recipe</Link>
             </nav>
         </div>
     )

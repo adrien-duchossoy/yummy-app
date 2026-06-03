@@ -32,13 +32,13 @@ body {
 }
 
 .side-bar {
-  
   position: relative;
   left: 0;
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 }
 
 #nav {
@@ -57,6 +57,7 @@ body {
   display: flex;
   align-items: center;
   gap: 3em;
+  margin-right: 20px;
 }
 
 .nav-link{
@@ -70,10 +71,11 @@ body {
 .new-recipe-btn {
   border: 1px solid #56B7A3;
   border-radius: 5px;
-  padding: 2px 6px;
+  padding: 4px 20px;
   color: white;
   background-color: #56B7A3;
   text-decoration: none;
+
 }
 
 .new-recipe-btn:hover {
@@ -104,6 +106,21 @@ body {
   padding: 0.5em;
   border-radius: 5px;
   height: 20px;
+}
+
+.page-not-found-container {
+  text-align: center;
+  width: 100%;
+}
+
+.page-not-found-container img{
+  width: 300px;
+  margin: 0 auto;
+  
+}
+
+.page-not-found-container p {
+  font-size: 25px;
 }
 
 
